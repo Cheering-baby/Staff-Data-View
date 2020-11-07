@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import  "core-js/es";
+import  "mutation-observer";
+import  "react-app-polyfill/ie9";
+import  "react-app-polyfill/stable";
 
 ReactDOM.render(
   <React.StrictMode>
