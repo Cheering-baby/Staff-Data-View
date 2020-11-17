@@ -1,9 +1,7 @@
 .App {
-  text-align: center;
-
-  img {
-    width: 100px;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .App-logo {
@@ -34,4 +32,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+}
+
+.left,
+.right {
+  width: 30%;
+}
+
+.center {
+  flex: 1;
 }
