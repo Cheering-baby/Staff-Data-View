@@ -12,11 +12,15 @@ class EchartsTest extends Component {
   componentDidMount() {
     var myChart = echarts.init(document.getElementById("ProportionOfPosts"));
     const option = {
-      backgroundColor: "#273454",
+      // backgroundColor: "#273454",
+      title: {
+        text: "员工职类",
+        left: "center",
+      },
       color: ["#cd4692", "#9658c3", "#6c6be2", "#01aebf", "#18b794"],
       tooltip: {
         trigger: "item",
-        formatter: "{a} <br/>{b} : {c}$ ({d}%)",
+        formatter: "{b} : {c}人 ({d}%)",
         textStyle: {
           fontSize: 16,
         },
@@ -36,7 +40,7 @@ class EchartsTest extends Component {
       },
       series: [
         {
-          name: "TITLE",
+          name: "员工职类",
           type: "pie",
           left: '0',
           clockwise: false,
@@ -51,7 +55,7 @@ class EchartsTest extends Component {
               name: "产品",
             },
             {
-              value: 15,
+              value: 20,
               name: "测试",
             },
             {
@@ -65,7 +69,7 @@ class EchartsTest extends Component {
           ],
           itemStyle: {
             normal: {
-              borderColor: "#273454",
+              // borderColor: "#273454",
               borderWidth: "5",
             },
           },

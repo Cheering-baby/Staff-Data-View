@@ -32,7 +32,7 @@ function EChartMapBars() {
     echarts.registerMap("china", geoJson);
     myChart.hideLoading();
     const option = {
-      backgroundColor: "#013954",
+      // backgroundColor: "#013954",
       title: [
         {
           text: "员工籍贯分布",
@@ -338,7 +338,7 @@ function EChartMapBars() {
     myChart.setOption(option, true);
   }, []);
 
-  return <div id="main" style={{ width: "100%", height: "500px" }} />;
+  return <div id="main" style={{ width: "100%", height: "400px" }} />;
 }
 
 export default EChartMapBars;
